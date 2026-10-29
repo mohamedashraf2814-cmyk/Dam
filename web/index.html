@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="شرح كود تطبيق DAMSTOCK HOMES المكتوب بـ Flutter و Dart، مع مساعد ذكي.">
+  <meta name="theme-color" content="#0E2420">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="DAMSTOCK Code">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <title>DAMSTOCK · دليل الكود</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #0E2420; }
+    #splash { position: fixed; inset: 0; display: grid; place-items: center; background: radial-gradient(circle at 70% 20%, #24524A, #173B34 45%, #0E2420); transition: opacity .4s; }
+    #splash img { width: 96px; height: 96px; border-radius: 24px; box-shadow: 0 18px 40px rgba(0,0,0,.35); animation: pulse 1.4s ease-in-out infinite; }
+    #splash p { margin: 18px 0 0; color: #D5B47A; font: 700 13px/1 system-ui, sans-serif; letter-spacing: 3px; text-align: center; }
+    @keyframes pulse { 50% { transform: scale(.94); opacity: .85; } }
+  </style>
+</head>
+<body>
+  <div id="splash"><div><img src="icons/Icon-192.png" alt=""><p>DAMSTOCK</p></div></div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var s = document.getElementById('splash');
+      if (s) { s.style.opacity = '0'; setTimeout(function () { s.remove(); }, 450); }
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
